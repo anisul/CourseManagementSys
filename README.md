@@ -1,5 +1,5 @@
-A website to manage courses
----------------------------
+A web application to manage courses
+============================
 * JSP Spring MVC framework
 * Hibernate with Oracle MySQL
 * Glassfish server
