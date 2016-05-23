@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 23, 2012 11:13:54 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.model.Filedatabase" table="filedatabase" catalog="student">
+        <id name="userName" type="string">
+            <column name="UserName" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="courseId" type="string">
+            <column name="Course_ID" length="45" />
+        </property>
+        <property name="fileName" type="string">
+            <column name="FileName" length="45" />
+        </property>
+        <property name="fileSize" type="java.lang.Long">
+            <column name="FileSize" />
+        </property>
+        <property name="fileType" type="string">
+            <column name="FileType" length="45" />
+        </property>
+        <property name="fileLocation" type="string">
+            <column name="FileLocation" length="100" />
+        </property>
+        <property name="fileId" type="string">
+            <column name="FileID" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 23, 2012 11:13:38 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.model.Coursefile" table="coursefile" catalog="student">
+        <id name="courseId" type="string">
+            <column name="CourseID" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="courseName" type="string">
+            <column name="CourseName" length="45" />
+        </property>
+        <property name="department" type="string">
+            <column name="Department" length="45" />
+        </property>
+        <property name="courseTeacher" type="string">
+            <column name="CourseTeacher" length="45" />
+        </property>
+        <property name="semester" type="string">
+            <column name="Semester" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

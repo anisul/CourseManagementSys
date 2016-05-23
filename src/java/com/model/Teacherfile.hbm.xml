@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 23, 2012 11:13:38 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.model.Teacherfile" table="teacherfile" catalog="student">
+        <id name="userName" type="string">
+            <column name="UserName" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="string">
+            <column name="Password" length="45" />
+        </property>
+        <property name="name" type="string">
+            <column name="Name" length="45" />
+        </property>
+        <property name="department" type="string">
+            <column name="Department" length="45" />
+        </property>
+        <property name="designation" type="string">
+            <column name="Designation" length="45" />
+        </property>
+        <property name="address" type="string">
+            <column name="Address" length="45" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="45" />
+        </property>
+        <property name="telephone" type="string">
+            <column name="Telephone" length="45" />
+        </property>
+        <property name="office" type="string">
+            <column name="Office" length="45" />
+        </property>
+        <property name="picture" type="string">
+            <column name="Picture" length="100" />
+        </property>
+        <property name="fileName" type="string">
+            <column name="FileName" length="45" />
+        </property>
+        <property name="fileSize" type="java.lang.Long">
+            <column name="FileSize" />
+        </property>
+        <property name="fileType" type="string">
+            <column name="FileType" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 23, 2012 11:13:38 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.model.Teacherauthentication" table="teacherauthentication" catalog="student">
+        <id name="userName" type="string">
+            <column name="UserName" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="string">
+            <column name="Password" length="45" />
+        </property>
+        <property name="pin" type="string">
+            <column name="PIN" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
